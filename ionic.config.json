@@ -1,0 +1,7 @@
+{
+  "name": "zionapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
