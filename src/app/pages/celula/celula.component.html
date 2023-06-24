@@ -1,3 +1,30 @@
-<p>
-  celula works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/folder/outbox">
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Células</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <div *ngFor="let celula of celulas">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img
+            alt="Silhouette of a person's head"
+            [src]="
+              '../../../assets/liaders-imgs/' + (celula?.lider?.image ?? '')
+            "
+          />
+        </ion-avatar>
+
+        <ion-label>{{ celula.nome }}</ion-label>
+      </ion-item>
+    </div>
+  </ion-list>
+</ion-content>

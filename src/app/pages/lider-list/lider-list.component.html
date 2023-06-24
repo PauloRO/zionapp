@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/folder/outbox">
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Líderes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div *ngFor="let celula of celulas">
+    <ion-card>
+      <ion-grid>
+        <ion-col>
+          <ion-card-header>
+            <ion-row class="ion-justify-content-center">
+              <ion-card-title>{{ celula.lider.nome }}</ion-card-title>
+            </ion-row>
+            <br />
+
+            <ion-row class="ion-justify-content-center">
+              <ion-avatar>
+                <img
+                  [src]="
+                    (celula?.lider?.image ?? '') !== ''
+                      ? '../../../assets/liaders-imgs/' +
+                        (celula?.lider?.image ?? '')
+                      : 'https://ionicframework.com/docs/img/demos/avatar.svg'
+                  "
+                />
+              </ion-avatar>
+            </ion-row>
+          </ion-card-header>
+
+          <ion-row class="ion-justify-content-center">
+            <ion-card-content>
+              {{ celula?.lider?.descricao }}
+            </ion-card-content>
+          </ion-row>
+        </ion-col>
+      </ion-grid>
+    </ion-card>
+  </div>
+</ion-content>

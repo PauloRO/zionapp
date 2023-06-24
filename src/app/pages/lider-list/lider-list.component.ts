@@ -3,11 +3,11 @@ import { Celula } from 'src/app/shared/models/celula';
 import { CelulaService } from 'src/app/shared/services/celula.service';
 
 @Component({
-  selector: 'app-celula',
-  templateUrl: './celula.component.html',
-  styleUrls: ['./celula.component.scss'],
+  selector: 'app-lider-list',
+  templateUrl: './lider-list.component.html',
+  styleUrls: ['./lider-list.component.scss'],
 })
-export class CelulaComponent implements OnInit {
+export class LiderListComponent implements OnInit {
   celulas: Celula[] = [];
 
   constructor(private celulaService: CelulaService) {}
@@ -19,7 +19,7 @@ export class CelulaComponent implements OnInit {
   findCelulas(): void {
     this.celulaService.getInformacoesCelula().subscribe((res) => {
       this.celulas = res as Celula[];
-      console.log(this.celulas);
+      console.log(res);
     });
   }
 }

@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { LiderListComponent } from './lider-list.component';
 import { RouterModule, Routes } from '@angular/router';
-import { CelulaComponent } from './celula.component';
-import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
 import { CelulaService } from 'src/app/shared/services/celula.service';
+import { IonicModule } from '@ionic/angular';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
-const routes: Routes = [{ path: '', component: CelulaComponent }];
+const routes: Routes = [{ path: '', component: LiderListComponent }];
 
 @NgModule({
-  declarations: [CelulaComponent],
+  declarations: [LiderListComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
@@ -20,6 +20,6 @@ const routes: Routes = [{ path: '', component: CelulaComponent }];
     RouterModule,
   ],
   providers: [CelulaService],
-  exports: [CelulaComponent],
+  exports: [LiderListComponent],
 })
-export class CelulaModule {}
+export class LiderListModule {}
