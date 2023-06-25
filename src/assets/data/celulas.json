@@ -14,7 +14,7 @@
       "image": "paulo.jpg",
       "descricao": "Líder da célula",
       "idade": 23,
-      "ocupação": "Dev. front-end"
+      "ocupacao": "Dev. front-end"
     }
   },
   {
@@ -28,10 +28,10 @@
       "numero": 123
     },
     "lider": {
-      "nome": "Wyllorrayne",
+      "nome": "Preta",
       "descricao": "Líder da célula",
       "idade": 23,
-      "ocupação": "Estudante de Jornalismo"
+      "ocupacao": "Estudante de Jornalismo"
     }
   },
   {
@@ -48,7 +48,7 @@
       "nome": "Lucas Tomé",
       "descricao": "Líder da célula",
       "idade": 22,
-      "ocupação": "Estudante de Jornalismo"
+      "ocupacao": "Estudante de Jornalismo"
     }
   },
   {
@@ -65,7 +65,7 @@
       "nome": "Wendel",
       "descricao": "Líder de célula",
       "idade": 20,
-      "ocupação": "Estudante de Gestão da informação"
+      "ocupacao": "Estudante de Gestão da informação"
     }
   }
 ]

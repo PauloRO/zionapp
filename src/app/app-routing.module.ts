@@ -1,4 +1,3 @@
-import { LiderListModule } from './pages/lider-list/lider-list.module';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -23,6 +22,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/lider-list/lider-list.module').then(
         (m) => m.LiderListModule
+      ),
+  },
+  {
+    path: 'lider-list/lider/:id',
+    loadChildren: () =>
+      import('./pages/lider-list/lider/lider.module').then(
+        (m) => m.LiderModule
       ),
   },
 ];

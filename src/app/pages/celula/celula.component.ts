@@ -19,7 +19,7 @@ export class CelulaComponent implements OnInit {
   findCelulas(): void {
     this.celulaService.getInformacoesCelula().subscribe((res) => {
       this.celulas = res as Celula[];
-      console.log(this.celulas);
+      console.log(res);
     });
   }
 }
