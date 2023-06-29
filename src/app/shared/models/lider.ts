@@ -4,4 +4,5 @@ export interface Lider {
   descricao: string;
   idade: number;
   ocupacao: string;
+  instagram: string;
 }

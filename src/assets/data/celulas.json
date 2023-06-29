@@ -4,17 +4,18 @@
     "nome": "Z4.2",
     "descricao": "Uma célula de exemplo",
     "horario": "20:00hrs",
-    "endereço": {
+    "endereco": {
       "bairro": "Ipanema 1",
-      "rua": "Rua Anna Alves de Oliveira",
+      "nome": "Rua Anna Alves de Oliveira",
       "numero": 478
     },
     "lider": {
       "nome": "Paulo Roberto",
-      "image": "paulo.jpg",
-      "descricao": "Líder da célula",
+      "image": "paulo.png",
+      "descricao": "Líder de célula",
       "idade": 23,
-      "ocupacao": "Dev. front-end"
+      "ocupacao": "Dev. front-end",
+      "instagram": "https://www.instagram.com/_ypaulo/"
     }
   },
   {
@@ -22,14 +23,15 @@
     "nome": "Z4",
     "descricao": "Uma célula de exemplo",
     "horario": "20:10hrs",
-    "endereço": {
+    "endereco": {
       "bairro": "Ipanema 2",
-      "rua": "Rua Exemplo",
-      "numero": 123
+      "nome": "Rua Nair Alves franqueiro",
+      "numero": 394
     },
     "lider": {
-      "nome": "Preta",
-      "descricao": "Líder da célula",
+      "nome": "Wyllorrany",
+      "image": "wyllo.png",
+      "descricao": "Líder de célula",
       "idade": 23,
       "ocupacao": "Estudante de Jornalismo"
     }
@@ -39,30 +41,32 @@
     "nome": "Z7",
     "descricao": "Uma célula de exemplo",
     "horario": "20:00hrs",
-    "endereço": {
+    "endereco": {
       "bairro": "Alto Umuarama",
-      "rua": "Rua Exemplo",
-      "numero": 123
+      "nome": "Rua Luís Roberto Alcântara",
+      "numero": 685
     },
     "lider": {
       "nome": "Lucas Tomé",
-      "descricao": "Líder da célula",
+      "image": "tome.png",
+      "descricao": "Líder de célula",
       "idade": 22,
       "ocupacao": "Estudante de Jornalismo"
     }
   },
   {
     "id": 4,
-    "nome": "Z3",
+    "nome": "Z1",
     "descricao": "Uma célula de exemplo",
     "horario": "20:30hrs",
-    "endereço": {
+    "endereco": {
       "bairro": "Santa Mônica",
-      "rua": "Rua Exemplo",
+      "nome": "Avenida César Finotti",
       "numero": 123
     },
     "lider": {
       "nome": "Wendel",
+      "image": "wendel.png",
       "descricao": "Líder de célula",
       "idade": 20,
       "ocupacao": "Estudante de Gestão da informação"

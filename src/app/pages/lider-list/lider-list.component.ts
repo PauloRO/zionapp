@@ -22,7 +22,6 @@ export class LiderListComponent implements OnInit {
   findCelulas(): void {
     this.celulaService.getInformacoesCelula().subscribe((res) => {
       this.celulas = res as Celula[];
-      console.log(res);
     });
   }
 

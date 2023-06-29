@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Celula } from 'src/app/shared/models/celula';
 import { CelulaService } from 'src/app/shared/services/celula.service';
 
 @Component({
-  selector: 'app-celula',
-  templateUrl: './celula.component.html',
-  styleUrls: ['./celula.component.scss'],
+  selector: 'app-celula-list',
+  templateUrl: './celula-list.component.html',
+  styleUrls: ['./celula-list.component.scss'],
 })
-export class CelulaComponent implements OnInit {
+export class CelulaListComponent implements OnInit {
   celulas: Celula[] = [];
 
-  constructor(private celulaService: CelulaService) {}
+  constructor(private celulaService: CelulaService, private router: Router) {}
 
   ngOnInit() {
     this.findCelulas();
@@ -19,7 +20,10 @@ export class CelulaComponent implements OnInit {
   findCelulas(): void {
     this.celulaService.getInformacoesCelula().subscribe((res) => {
       this.celulas = res as Celula[];
-      console.log(res);
     });
+  }
+
+  toCelula(celulaId: number): void {
+    this.router.navigate([`/celula-list/celula/${celulaId}`]);
   }
 }

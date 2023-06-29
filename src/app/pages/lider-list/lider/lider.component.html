@@ -10,32 +10,31 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <ion-grid>
-    <ion-col>
-      <ion-row class="ion-justify-content-center">
-        <ion-img
-          [src]="
-            (celula?.lider?.image ?? '') !== ''
-              ? '../../../assets/liaders-imgs/' + (celula?.lider?.image ?? '')
-              : 'https://ionicframework.com/docs/img/demos/avatar.svg'
-          "
-        ></ion-img>
-      </ion-row>
+<ion-content>
+  <ion-card>
+    <ion-img
+      [src]="
+        (celula?.lider?.image ?? '') !== ''
+          ? '../../../assets/liaders-imgs/' + (celula?.lider?.image ?? '')
+          : 'https://ionicframework.com/docs/img/demos/avatar.svg'
+      "
+    ></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>{{ celula?.lider?.idade }} anos</ion-card-subtitle>
+      <ion-card-title
+        ><a
+          target="_blank"
+          rel="noopener"
+          [href]="celula?.lider?.instagram"
+          class="link_custom"
+          >{{ celula?.lider?.nome }}</a
+        ></ion-card-title
+      >
+    </ion-card-header>
 
-      <ion-row class="ion-justify-content-center">
-        <h2>{{ celula?.lider?.nome }}</h2>
-      </ion-row>
-
-      <ion-row class="ion-justify-content-center">
-        <h3>{{ celula?.lider?.idade }}</h3>
-      </ion-row>
-      <ion-row class="ion-justify-content-center">
-        <h3>{{ celula?.lider?.descricao }}</h3>
-      </ion-row>
-      <ion-row class="ion-justify-content-center">
-        <h3>{{ celula?.lider?.ocupacao }}</h3>
-      </ion-row>
-    </ion-col>
-  </ion-grid>
+    <ion-card-content>
+      <h2>{{ celula?.lider?.descricao }}</h2>
+      <h2>{{ celula?.lider?.ocupacao }}</h2>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

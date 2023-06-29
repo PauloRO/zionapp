@@ -13,9 +13,18 @@ const routes: Routes = [
       import('./folder/folder.module').then((m) => m.FolderPageModule),
   },
   {
-    path: 'celula',
+    path: 'celula-list',
     loadChildren: () =>
-      import('./pages/celula/celula.module').then((m) => m.CelulaModule),
+      import('./pages/celula-list/celula-list.module').then(
+        (m) => m.CelulaListModule
+      ),
+  },
+  {
+    path: 'celula-list/celula/:id',
+    loadChildren: () =>
+      import('./pages/celula-list/celula/celula.module').then(
+        (m) => m.CelulaModule
+      ),
   },
   {
     path: 'lider-list',

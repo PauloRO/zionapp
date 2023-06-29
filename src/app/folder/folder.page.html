@@ -8,14 +8,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-img src="../../../assets/images/zion_logo.png"></ion-img>
+    <ion-card-header>
+      <ion-card-title
+        ><a
+          target="_blank"
+          rel="noopener"
+          href="https://www.instagram.com/equipe.zion/"
+          class="link_custom"
+          >EQUIPE ZION</a
+        >
+      </ion-card-title>
+    </ion-card-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card-content> </ion-card-content>
+  </ion-card>
 </ion-content>
