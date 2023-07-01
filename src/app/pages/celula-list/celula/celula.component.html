@@ -12,10 +12,13 @@
 
 <ion-content>
   <ion-card>
-    <img
-      alt="Silhouette of mountains"
-      src="https://ionicframework.com/docs/img/demos/card-media.png"
-    />
+    <ion-img
+      [src]="
+        (celula?.imagem ?? '') !== ''
+          ? '../../../assets/celulas-imgs/' + (celula?.imagem ?? '')
+          : 'https://ionicframework.com/docs/img/demos/card-media.png'
+      "
+    ></ion-img>
     <ion-card-header>
       <ion-card-subtitle>{{ celula?.lider?.nome }}</ion-card-subtitle>
       <ion-card-title>{{ celula?.nome }}</ion-card-title>
@@ -30,11 +33,17 @@
 
           <br />
 
-          <ion-col class="ion-padding ion-text-wrap">
-            <h2>Endereço:</h2>
-            <h2>{{ celula?.endereco?.nome }}</h2>
-            <h2>Bairro: {{ celula?.endereco?.bairro }}</h2>
-            <h2>Nº: {{ celula?.endereco?.numero }}</h2>
+          <ion-col class="ion-padding">
+            <ion-row>
+              <ion-thumbnail>
+                <img src="../../../assets/images/local_logo.png" />
+              </ion-thumbnail>
+              <ion-col>
+                <h2>{{ celula?.endereco?.nome }}</h2>
+                <h2>Bairro: {{ celula?.endereco?.bairro }}</h2>
+                <h2>Nº: {{ celula?.endereco?.numero }}</h2>
+              </ion-col>
+            </ion-row>
           </ion-col>
         </ion-col>
       </ion-grid>
