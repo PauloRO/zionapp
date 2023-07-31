@@ -2,7 +2,8 @@
   {
     "id": 1,
     "nome": "Z4.2",
-    "descricao": "Uma célula de exemplo",
+    "descricao": "Uma célula para você ser amado.",
+    "imagem": "celula_paulo.jpg",
     "horario": "20:00hrs",
     "endereco": {
       "bairro": "Ipanema 1",
@@ -12,7 +13,7 @@
     "lider": {
       "nome": "Paulo Roberto",
       "image": "paulo.png",
-      "descricao": "Líder de célula",
+      "descricao": "The love of Christ motivates me.",
       "idade": 23,
       "ocupacao": "Dev. front-end",
       "instagram": "https://www.instagram.com/_ypaulo/"
@@ -33,7 +34,8 @@
       "image": "wyllo.png",
       "descricao": "Líder de célula",
       "idade": 23,
-      "ocupacao": "Estudante de Jornalismo"
+      "ocupacao": "Estudante de Jornalismo",
+      "instagram": "https://www.instagram.com/wyllorrany/"
     }
   },
   {
